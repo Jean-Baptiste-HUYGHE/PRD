@@ -1,0 +1,75 @@
+\hypertarget{class_graph_writer_1_1_graph_writer}{}\doxysection{Graph\+Writer.\+Graph\+Writer Class Reference}
+\label{class_graph_writer_1_1_graph_writer}\index{GraphWriter.GraphWriter@{GraphWriter.GraphWriter}}
+Inheritance diagram for Graph\+Writer.\+Graph\+Writer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graph_writer_1_1_graph_writer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_graph_writer_1_1_graph_writer_a9843b12970c8218cfc561d41d0edae97}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_graph_writer_1_1_graph_writer_a15f3cc8ea9e6468b72168043b4abc9fa}{write\+Graph\+ML}} (self, Connectome\+Graph graph\+Written)
+\item 
+def \mbox{\hyperlink{class_graph_writer_1_1_graph_writer_adc7538fd36d12d00761243ee7662a813}{write\+Temp\+Graph\+ML}} (self, Connectome\+Graph graph\+Written)
+\item 
+def \mbox{\hyperlink{class_graph_writer_1_1_graph_writer_a01d51341aa287040ae6c82d794b613da}{write\+G\+XL}} (self, Connectome\+Graph graph\+Written)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class to write a connectome graph into a file.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_writer_1_1_graph_writer_a9843b12970c8218cfc561d41d0edae97}\label{class_graph_writer_1_1_graph_writer_a9843b12970c8218cfc561d41d0edae97}} 
+\index{GraphWriter.GraphWriter@{GraphWriter.GraphWriter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!GraphWriter.GraphWriter@{GraphWriter.GraphWriter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Graph\+Writer.\+Graph\+Writer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Init function for the graph writer
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_writer_1_1_graph_writer_a15f3cc8ea9e6468b72168043b4abc9fa}\label{class_graph_writer_1_1_graph_writer_a15f3cc8ea9e6468b72168043b4abc9fa}} 
+\index{GraphWriter.GraphWriter@{GraphWriter.GraphWriter}!writeGraphML@{writeGraphML}}
+\index{writeGraphML@{writeGraphML}!GraphWriter.GraphWriter@{GraphWriter.GraphWriter}}
+\doxysubsubsection{\texorpdfstring{writeGraphML()}{writeGraphML()}}
+{\footnotesize\ttfamily def Graph\+Writer.\+Graph\+Writer.\+write\+Graph\+ML (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Connectome\+Graph}]{graph\+Written }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the networkx graph of the ConnectomeGraph into a graphml file
+:param graphWritten: the graph to write
+:return: the filename or an empty string if there is an error
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_graph_writer_1_1_graph_writer_a01d51341aa287040ae6c82d794b613da}\label{class_graph_writer_1_1_graph_writer_a01d51341aa287040ae6c82d794b613da}} 
+\index{GraphWriter.GraphWriter@{GraphWriter.GraphWriter}!writeGXL@{writeGXL}}
+\index{writeGXL@{writeGXL}!GraphWriter.GraphWriter@{GraphWriter.GraphWriter}}
+\doxysubsubsection{\texorpdfstring{writeGXL()}{writeGXL()}}
+{\footnotesize\ttfamily def Graph\+Writer.\+Graph\+Writer.\+write\+G\+XL (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Connectome\+Graph}]{graph\+Written }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the networkx graph of the ConnectomeGraph into a gxl file
+reading operations
+:param graphWritten: the graph to write
+:return: the filename
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_graph_writer_1_1_graph_writer_adc7538fd36d12d00761243ee7662a813}\label{class_graph_writer_1_1_graph_writer_adc7538fd36d12d00761243ee7662a813}} 
+\index{GraphWriter.GraphWriter@{GraphWriter.GraphWriter}!writeTempGraphML@{writeTempGraphML}}
+\index{writeTempGraphML@{writeTempGraphML}!GraphWriter.GraphWriter@{GraphWriter.GraphWriter}}
+\doxysubsubsection{\texorpdfstring{writeTempGraphML()}{writeTempGraphML()}}
+{\footnotesize\ttfamily def Graph\+Writer.\+Graph\+Writer.\+write\+Temp\+Graph\+ML (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Connectome\+Graph}]{graph\+Written }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the networkx graph of the ConnectomeGraph into a temporary graphml file for previsualisation or graph
+reading operations
+:param graphWritten: the graph to write
+:return: the filename
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Travail\+\_\+\+Polytech/\+D\+I5/\+P\+R\+D\+\_\+\+Project/\+File\+Manager/Graph\+Writer.\+py\end{DoxyCompactItemize}

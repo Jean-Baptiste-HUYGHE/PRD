@@ -1,0 +1,200 @@
+\hypertarget{class_connectome_graph_1_1_connectome_graph}{}\doxysection{Connectome\+Graph.\+Connectome\+Graph Class Reference}
+\label{class_connectome_graph_1_1_connectome_graph}\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a1247c05b0a7efbfc535d4e7b7d803d3d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str color=\textquotesingle{}grey\textquotesingle{}, dict options=None)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_ab8cabcbc4c63245603cf917028244957}{add\+Node}} (self, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_ab74f6751fff6d2c082280a7b587563f7}{add\+Node\+Attributes}} (self, attribute\+List, attribute\+Names)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a7c5fde38532c5295e4043fbff01078d5}{add\+Edge}} (self, i, j, weight=0)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a12351b634eae4b36cd6e2b2550167d10}{calculate\+Degree}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_aa3b484b6339a9b98ed414a0e1c82459e}{calculate\+Clustering}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a4ee973a11f0759c4b2df4c4eade7a956}{calculate\+Path\+Length}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a01c44de1bf7072d87b71d8662860881b}{calculate\+Strength}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a8e0e18d71469826bfe1491b4107e6356}{calculate\+Efficiency}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a602fe961f2f709fded9cf4b406b1484e}{calculate\+Betweenness\+Centrality}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_acd05b9af20d3b50b48a4aabaf1d238ab}{calculate\+Smallworldness}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_graph_1_1_connectome_graph_a8fdae2328ec8cfe597b1421bc6cf2376}{calculate\+Info}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a1c39769d568304b3b0ed2241513db336}\label{class_connectome_graph_1_1_connectome_graph_a1c39769d568304b3b0ed2241513db336}} 
+{\bfseries graph}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a3436270fd64c62a732596a70cd312888}\label{class_connectome_graph_1_1_connectome_graph_a3436270fd64c62a732596a70cd312888}} 
+{\bfseries color}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_adc9478dbd23d475a5f49eadff320b462}\label{class_connectome_graph_1_1_connectome_graph_adc9478dbd23d475a5f49eadff320b462}} 
+{\bfseries options}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a2e35cbedaf7dce0b15efdcaf5ab99d3e}\label{class_connectome_graph_1_1_connectome_graph_a2e35cbedaf7dce0b15efdcaf5ab99d3e}} 
+{\bfseries type}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_aaa9e7cd907ec05e58445c698615b1100}\label{class_connectome_graph_1_1_connectome_graph_aaa9e7cd907ec05e58445c698615b1100}} 
+{\bfseries nodecounter}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a2b471ecfdabeaea0b9a79dc8379af909}\label{class_connectome_graph_1_1_connectome_graph_a2b471ecfdabeaea0b9a79dc8379af909}} 
+{\bfseries pathlength}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_aa11e00dce9950ee8cf0b99db642ca94f}\label{class_connectome_graph_1_1_connectome_graph_aa11e00dce9950ee8cf0b99db642ca94f}} 
+{\bfseries smallworldness}
+\item 
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a644615ccea102972615121327eba4f46}\label{class_connectome_graph_1_1_connectome_graph_a644615ccea102972615121327eba4f46}} 
+{\bfseries efficiency}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class to represent informations about the graph of the connectome.
+
+The graph is initialized with a string to represent the color of the edges and a dict of options.
+
+Options are the following:
+    - directed: directed or undirected graph
+    - unlinked: removal of isolated nodes
+    - weighted: weighted or unweighted edges
+    - degree: calculation of the degree of the nodes
+    - nodestrength: calculation of the node strength of the nodes (needs a weighted graph)
+    - clustering: calculation of the clustering coefficient of the nodes
+    - betweenness: calculation of the betweenness centrality of the nodes
+    - efficiency: calculation of the global efficiency of the graph (needs an undirected graph)
+    - smallworld: calculation fo the smallworld coefficient (needs an undirected and unlinked graph)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a1247c05b0a7efbfc535d4e7b7d803d3d}\label{class_connectome_graph_1_1_connectome_graph_a1247c05b0a7efbfc535d4e7b7d803d3d}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str }]{color = {\ttfamily \textquotesingle{}grey\textquotesingle{}},  }\item[{dict }]{options = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Init function for the connectome graph
+:param color: the color for the visualisation
+:param options: the option to initialize the networkx graph
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a7c5fde38532c5295e4043fbff01078d5}\label{class_connectome_graph_1_1_connectome_graph_a7c5fde38532c5295e4043fbff01078d5}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+add\+Edge (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i,  }\item[{}]{j,  }\item[{}]{weight = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add an edge between two nodes.
+:param i: the starting node
+:param j: the ending node
+:param weight: the weight of the edge
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_ab8cabcbc4c63245603cf917028244957}\label{class_connectome_graph_1_1_connectome_graph_ab8cabcbc4c63245603cf917028244957}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!addNode@{addNode}}
+\index{addNode@{addNode}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{addNode()}{addNode()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+add\+Node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a node to the graph.
+:param kwargs: optional - the parameters of the node
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_ab74f6751fff6d2c082280a7b587563f7}\label{class_connectome_graph_1_1_connectome_graph_ab74f6751fff6d2c082280a7b587563f7}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!addNodeAttributes@{addNodeAttributes}}
+\index{addNodeAttributes@{addNodeAttributes}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{addNodeAttributes()}{addNodeAttributes()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+add\+Node\+Attributes (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{attribute\+List,  }\item[{}]{attribute\+Names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the attributes of the nodes in the graph.
+:param attributeList: the list containing the attributes values
+:param attributeNames: the list containign the attributes names
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a602fe961f2f709fded9cf4b406b1484e}\label{class_connectome_graph_1_1_connectome_graph_a602fe961f2f709fded9cf4b406b1484e}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateBetweennessCentrality@{calculateBetweennessCentrality}}
+\index{calculateBetweennessCentrality@{calculateBetweennessCentrality}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateBetweennessCentrality()}{calculateBetweennessCentrality()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Betweenness\+Centrality (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the betweenness centrality of the nodes and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_aa3b484b6339a9b98ed414a0e1c82459e}\label{class_connectome_graph_1_1_connectome_graph_aa3b484b6339a9b98ed414a0e1c82459e}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateClustering@{calculateClustering}}
+\index{calculateClustering@{calculateClustering}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateClustering()}{calculateClustering()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Clustering (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the clustering coefficient of nodes in the graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a12351b634eae4b36cd6e2b2550167d10}\label{class_connectome_graph_1_1_connectome_graph_a12351b634eae4b36cd6e2b2550167d10}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateDegree@{calculateDegree}}
+\index{calculateDegree@{calculateDegree}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateDegree()}{calculateDegree()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Degree (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the degree of nodes in the graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a8e0e18d71469826bfe1491b4107e6356}\label{class_connectome_graph_1_1_connectome_graph_a8e0e18d71469826bfe1491b4107e6356}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateEfficiency@{calculateEfficiency}}
+\index{calculateEfficiency@{calculateEfficiency}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateEfficiency()}{calculateEfficiency()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Efficiency (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the global efficiency of the  graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a8fdae2328ec8cfe597b1421bc6cf2376}\label{class_connectome_graph_1_1_connectome_graph_a8fdae2328ec8cfe597b1421bc6cf2376}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateInfo@{calculateInfo}}
+\index{calculateInfo@{calculateInfo}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateInfo()}{calculateInfo()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates all the information in the graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a4ee973a11f0759c4b2df4c4eade7a956}\label{class_connectome_graph_1_1_connectome_graph_a4ee973a11f0759c4b2df4c4eade7a956}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculatePathLength@{calculatePathLength}}
+\index{calculatePathLength@{calculatePathLength}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculatePathLength()}{calculatePathLength()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Path\+Length (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the average shortest path length of the graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_acd05b9af20d3b50b48a4aabaf1d238ab}\label{class_connectome_graph_1_1_connectome_graph_acd05b9af20d3b50b48a4aabaf1d238ab}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateSmallworldness@{calculateSmallworldness}}
+\index{calculateSmallworldness@{calculateSmallworldness}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateSmallworldness()}{calculateSmallworldness()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Smallworldness (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the smallworldness coefficent of the graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_graph_1_1_connectome_graph_a01c44de1bf7072d87b71d8662860881b}\label{class_connectome_graph_1_1_connectome_graph_a01c44de1bf7072d87b71d8662860881b}} 
+\index{ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}!calculateStrength@{calculateStrength}}
+\index{calculateStrength@{calculateStrength}!ConnectomeGraph.ConnectomeGraph@{ConnectomeGraph.ConnectomeGraph}}
+\doxysubsubsection{\texorpdfstring{calculateStrength()}{calculateStrength()}}
+{\footnotesize\ttfamily def Connectome\+Graph.\+Connectome\+Graph.\+calculate\+Strength (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the strength of nodes in the graph and adds it as an attribute.
+:return: None
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Travail\+\_\+\+Polytech/\+D\+I5/\+P\+R\+D\+\_\+\+Project/\+Connectome/Connectome\+Graph.\+py\end{DoxyCompactItemize}

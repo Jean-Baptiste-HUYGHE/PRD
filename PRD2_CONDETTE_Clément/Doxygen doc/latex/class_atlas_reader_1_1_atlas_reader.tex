@@ -1,0 +1,60 @@
+\hypertarget{class_atlas_reader_1_1_atlas_reader}{}\doxysection{Atlas\+Reader.\+Atlas\+Reader Class Reference}
+\label{class_atlas_reader_1_1_atlas_reader}\index{AtlasReader.AtlasReader@{AtlasReader.AtlasReader}}
+Inheritance diagram for Atlas\+Reader.\+Atlas\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_atlas_reader_1_1_atlas_reader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_atlas_reader_1_1_atlas_reader_a68d6c59ecbba048b18646a449c54aa8b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_atlas_reader_1_1_atlas_reader_a854eeb415ea75dbbc89b25d389568b20}{read\+Atlas}} (self, Connectome\+Graph graph)
+\item 
+def \mbox{\hyperlink{class_atlas_reader_1_1_atlas_reader_a87a4964f8d7cde3dee672980452609c0}{check\+Fields}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class to read a brain atlas file.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_atlas_reader_1_1_atlas_reader_a68d6c59ecbba048b18646a449c54aa8b}\label{class_atlas_reader_1_1_atlas_reader_a68d6c59ecbba048b18646a449c54aa8b}} 
+\index{AtlasReader.AtlasReader@{AtlasReader.AtlasReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!AtlasReader.AtlasReader@{AtlasReader.AtlasReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Atlas\+Reader.\+Atlas\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Init function for the atlas reader
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_atlas_reader_1_1_atlas_reader_a87a4964f8d7cde3dee672980452609c0}\label{class_atlas_reader_1_1_atlas_reader_a87a4964f8d7cde3dee672980452609c0}} 
+\index{AtlasReader.AtlasReader@{AtlasReader.AtlasReader}!checkFields@{checkFields}}
+\index{checkFields@{checkFields}!AtlasReader.AtlasReader@{AtlasReader.AtlasReader}}
+\doxysubsubsection{\texorpdfstring{checkFields()}{checkFields()}}
+{\footnotesize\ttfamily def Atlas\+Reader.\+Atlas\+Reader.\+check\+Fields (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read the atlas to look for a header or to test fields and estimate the values.
+:return: list of fields in the atlas
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_atlas_reader_1_1_atlas_reader_a854eeb415ea75dbbc89b25d389568b20}\label{class_atlas_reader_1_1_atlas_reader_a854eeb415ea75dbbc89b25d389568b20}} 
+\index{AtlasReader.AtlasReader@{AtlasReader.AtlasReader}!readAtlas@{readAtlas}}
+\index{readAtlas@{readAtlas}!AtlasReader.AtlasReader@{AtlasReader.AtlasReader}}
+\doxysubsubsection{\texorpdfstring{readAtlas()}{readAtlas()}}
+{\footnotesize\ttfamily def Atlas\+Reader.\+Atlas\+Reader.\+read\+Atlas (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Connectome\+Graph}]{graph }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read an atlas file in a .csv, .txt, .xml or .node file to add nodes to a graph.
+:param graph: the graph to update with the found nodes
+:return: None
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Travail\+\_\+\+Polytech/\+D\+I5/\+P\+R\+D\+\_\+\+Project/\+File\+Manager/Atlas\+Reader.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{class_connectome_object_1_1_connectome_object}{}\doxysection{Connectome\+Object.\+Connectome\+Object Class Reference}
+\label{class_connectome_object_1_1_connectome_object}\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_a61c0f8a46b417e0f3912ba15cfe7ebb9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, str color=\textquotesingle{}grey\textquotesingle{}, options=None)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_a5db28f88840c0adc9b0d0c1087eec859}{load\+Connectome\+Graph}} (self, type\+File)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_a9e0e7aae250cfee6cf946368a7732558}{load\+Connectome\+Atlas\+Matrix}} (self, option=\char`\"{}default\char`\"{}, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_a24d8e945dcac0d80750b2f2a5fb52897}{set\+Brain\+Volume}} (self, volume)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_a7c9b7611a103b72b27cde3c176025d5b}{set\+Filenames}} (self, matrix\+Name, atlas\+Name, graph\+Name)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_adc1eb8b0f9ec25d1c666a2f376744911}{reload\+Graph}} (self, options)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_af1565658dc39aa467318944357d5dd27}{create\+Sub\+Graph}} (self, option)
+\item 
+def \mbox{\hyperlink{class_connectome_object_1_1_connectome_object_a6be5e67c32758229231e217f2bfb05e8}{load\+Sub\+Graph}} (self, option)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a47467394f520d6bf8379c9cec731cb45}\label{class_connectome_object_1_1_connectome_object_a47467394f520d6bf8379c9cec731cb45}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a9b89c92e082e76866ced8a297e2fa176}\label{class_connectome_object_1_1_connectome_object_a9b89c92e082e76866ced8a297e2fa176}} 
+{\bfseries volume}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_aa3dea9e39c78fc789b88e19b881db521}\label{class_connectome_object_1_1_connectome_object_aa3dea9e39c78fc789b88e19b881db521}} 
+{\bfseries options}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a331455c09a1c176bf1fd12f45f66bfad}\label{class_connectome_object_1_1_connectome_object_a331455c09a1c176bf1fd12f45f66bfad}} 
+{\bfseries connectomegraph}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a409703bbf1d63ccd2725c08b5122a764}\label{class_connectome_object_1_1_connectome_object_a409703bbf1d63ccd2725c08b5122a764}} 
+{\bfseries matrix\+Reader}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a550a85db05d54c8e2b1c19ab0a70fb76}\label{class_connectome_object_1_1_connectome_object_a550a85db05d54c8e2b1c19ab0a70fb76}} 
+{\bfseries atlas\+Reader}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a6cb8d4f222fceb3c9c34787a1232b1a6}\label{class_connectome_object_1_1_connectome_object_a6cb8d4f222fceb3c9c34787a1232b1a6}} 
+{\bfseries graph\+Reader}
+\item 
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a3822052efd424db4b0058906aa39b726}\label{class_connectome_object_1_1_connectome_object_a3822052efd424db4b0058906aa39b726}} 
+{\bfseries graph\+Writer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for connectome objects used to initialize the connectome with different parameters.
+Contains the Connectomegraph attribute that represents the networkx graph.
+The reader and writer attributes are used to manipulate files for the creation and writing of graphs.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a61c0f8a46b417e0f3912ba15cfe7ebb9}\label{class_connectome_object_1_1_connectome_object_a61c0f8a46b417e0f3912ba15cfe7ebb9}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{str }]{color = {\ttfamily \textquotesingle{}grey\textquotesingle{}},  }\item[{}]{options = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Init function for the connectome object
+:param name: the name of the connectome
+:param color: the color for the visualisation
+:param options: the option to initialize the networkx graph
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_af1565658dc39aa467318944357d5dd27}\label{class_connectome_object_1_1_connectome_object_af1565658dc39aa467318944357d5dd27}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!createSubGraph@{createSubGraph}}
+\index{createSubGraph@{createSubGraph}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{createSubGraph()}{createSubGraph()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+create\+Sub\+Graph (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{option }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a subgraph of the current graph corresponding to the selected option.
+:param option: The type of subgraph wanted, currently right or left hemisphere
+:return: The subgraph created
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a9e0e7aae250cfee6cf946368a7732558}\label{class_connectome_object_1_1_connectome_object_a9e0e7aae250cfee6cf946368a7732558}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!loadConnectomeAtlasMatrix@{loadConnectomeAtlasMatrix}}
+\index{loadConnectomeAtlasMatrix@{loadConnectomeAtlasMatrix}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{loadConnectomeAtlasMatrix()}{loadConnectomeAtlasMatrix()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+load\+Connectome\+Atlas\+Matrix (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{option = {\ttfamily \char`\"{}default\char`\"{}},  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a connectome from a connectivity matrix and an atlas
+:param option:
+:param kwargs: parameters to set the name of the files if needed
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a5db28f88840c0adc9b0d0c1087eec859}\label{class_connectome_object_1_1_connectome_object_a5db28f88840c0adc9b0d0c1087eec859}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!loadConnectomeGraph@{loadConnectomeGraph}}
+\index{loadConnectomeGraph@{loadConnectomeGraph}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{loadConnectomeGraph()}{loadConnectomeGraph()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+load\+Connectome\+Graph (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type\+File }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a connectome from a graph file
+:param typeFile: integer representing the type of file to read
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a6be5e67c32758229231e217f2bfb05e8}\label{class_connectome_object_1_1_connectome_object_a6be5e67c32758229231e217f2bfb05e8}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!loadSubGraph@{loadSubGraph}}
+\index{loadSubGraph@{loadSubGraph}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{loadSubGraph()}{loadSubGraph()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+load\+Sub\+Graph (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{option }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads and set the subgraph created from the option passed as parameter
+:param option: the type of subgraph wanted, right now only left and right hemisphere
+:return: a boolean to confirm the subgraph creation
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_adc1eb8b0f9ec25d1c666a2f376744911}\label{class_connectome_object_1_1_connectome_object_adc1eb8b0f9ec25d1c666a2f376744911}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!reloadGraph@{reloadGraph}}
+\index{reloadGraph@{reloadGraph}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{reloadGraph()}{reloadGraph()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+reload\+Graph (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{options }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reload the connectome with a new set of options.
+:param options: The new options
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a24d8e945dcac0d80750b2f2a5fb52897}\label{class_connectome_object_1_1_connectome_object_a24d8e945dcac0d80750b2f2a5fb52897}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!setBrainVolume@{setBrainVolume}}
+\index{setBrainVolume@{setBrainVolume}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{setBrainVolume()}{setBrainVolume()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+set\+Brain\+Volume (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{volume }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets a brian volume for the visualization
+:param volume: the brain volume file used in the visualization
+:return: None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_object_1_1_connectome_object_a7c9b7611a103b72b27cde3c176025d5b}\label{class_connectome_object_1_1_connectome_object_a7c9b7611a103b72b27cde3c176025d5b}} 
+\index{ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}!setFilenames@{setFilenames}}
+\index{setFilenames@{setFilenames}!ConnectomeObject.ConnectomeObject@{ConnectomeObject.ConnectomeObject}}
+\doxysubsubsection{\texorpdfstring{setFilenames()}{setFilenames()}}
+{\footnotesize\ttfamily def Connectome\+Object.\+Connectome\+Object.\+set\+Filenames (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{matrix\+Name,  }\item[{}]{atlas\+Name,  }\item[{}]{graph\+Name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets all the filenames for the readers
+:param matrixName: the name of the matrix file
+:param atlasName: the name of the atlas file
+:param graphName: the name of the graph file
+:return:
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Travail\+\_\+\+Polytech/\+D\+I5/\+P\+R\+D\+\_\+\+Project/\+Connectome/Connectome\+Object.\+py\end{DoxyCompactItemize}

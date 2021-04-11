@@ -1,0 +1,75 @@
+\hypertarget{class_connectome_visualizer_1_1_connectome_visualizer}{}\doxysection{Connectome\+Visualizer.\+Connectome\+Visualizer Class Reference}
+\label{class_connectome_visualizer_1_1_connectome_visualizer}\index{ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}}
+Inheritance diagram for Connectome\+Visualizer.\+Connectome\+Visualizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_connectome_visualizer_1_1_connectome_visualizer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_connectome_visualizer_1_1_connectome_visualizer_ae8a2a162715650a39eb6fcfcf4b8776d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{class_connectome_visualizer_1_1_connectome_visualizer_a8d9d1a236a5e9fcf2551231bd584c8c9}{visualize\+Connectome\+Graph}} (self, Connectome\+Object connectome, bool volume=False, viztype=\char`\"{}default\char`\"{})
+\item 
+def \mbox{\hyperlink{class_connectome_visualizer_1_1_connectome_visualizer_af2d557386e65ae96ab3361d7b874aac0}{visualize\+Connectome\+Graph\+File}} (self, filename)
+\item 
+def \mbox{\hyperlink{class_connectome_visualizer_1_1_connectome_visualizer_afd412a4d8f9976df66a100234c02573b}{select\+Color}} (self, Connectome\+Graph connectomegraph)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class to visualize the connectome as a 3D network based on the networkx graph of the ConnectomeObject's ConnectomeGraph
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_connectome_visualizer_1_1_connectome_visualizer_ae8a2a162715650a39eb6fcfcf4b8776d}\label{class_connectome_visualizer_1_1_connectome_visualizer_ae8a2a162715650a39eb6fcfcf4b8776d}} 
+\index{ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Connectome\+Visualizer.\+Connectome\+Visualizer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Init function for the connectome vizualiser
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_connectome_visualizer_1_1_connectome_visualizer_afd412a4d8f9976df66a100234c02573b}\label{class_connectome_visualizer_1_1_connectome_visualizer_afd412a4d8f9976df66a100234c02573b}} 
+\index{ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}!selectColor@{selectColor}}
+\index{selectColor@{selectColor}!ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}}
+\doxysubsubsection{\texorpdfstring{selectColor()}{selectColor()}}
+{\footnotesize\ttfamily def Connectome\+Visualizer.\+Connectome\+Visualizer.\+select\+Color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Connectome\+Graph}]{connectomegraph }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a string corresponding with the color of the graph or a default grey color
+:param connectomegraph: the graph which color needs to be read
+:return: the color string
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_visualizer_1_1_connectome_visualizer_a8d9d1a236a5e9fcf2551231bd584c8c9}\label{class_connectome_visualizer_1_1_connectome_visualizer_a8d9d1a236a5e9fcf2551231bd584c8c9}} 
+\index{ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}!visualizeConnectomeGraph@{visualizeConnectomeGraph}}
+\index{visualizeConnectomeGraph@{visualizeConnectomeGraph}!ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}}
+\doxysubsubsection{\texorpdfstring{visualizeConnectomeGraph()}{visualizeConnectomeGraph()}}
+{\footnotesize\ttfamily def Connectome\+Visualizer.\+Connectome\+Visualizer.\+visualize\+Connectome\+Graph (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Connectome\+Object}]{connectome,  }\item[{bool }]{volume = {\ttfamily False},  }\item[{}]{viztype = {\ttfamily \char`\"{}default\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Visualize the connectome as a 3D network from a ConnectomeObject.
+:param viztype: type of vizualisation for the graph
+:param connectome: the connectome to display
+:param volume: boolean for the usage of a brainvolume
+:return: boolean to designate if the connectome is displayed
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_connectome_visualizer_1_1_connectome_visualizer_af2d557386e65ae96ab3361d7b874aac0}\label{class_connectome_visualizer_1_1_connectome_visualizer_af2d557386e65ae96ab3361d7b874aac0}} 
+\index{ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}!visualizeConnectomeGraphFile@{visualizeConnectomeGraphFile}}
+\index{visualizeConnectomeGraphFile@{visualizeConnectomeGraphFile}!ConnectomeVisualizer.ConnectomeVisualizer@{ConnectomeVisualizer.ConnectomeVisualizer}}
+\doxysubsubsection{\texorpdfstring{visualizeConnectomeGraphFile()}{visualizeConnectomeGraphFile()}}
+{\footnotesize\ttfamily def Connectome\+Visualizer.\+Connectome\+Visualizer.\+visualize\+Connectome\+Graph\+File (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Visualize the connectome as a 3D network from a graph file
+:param filename: the name of the file to read
+:return: None
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Travail\+\_\+\+Polytech/\+D\+I5/\+P\+R\+D\+\_\+\+Project/\+Visualisation/Connectome\+Visualizer.\+py\end{DoxyCompactItemize}
